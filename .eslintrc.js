@@ -8,8 +8,10 @@ module.exports = {
     {
       env: {
         node: true,
+        "jest/globals": true,
       },
-      files: [".eslintrc.{js,cjs}"],
+      files: [".eslintrc.{js,cjs}", "tests/**/*"],
+      plugins: ["test"],
       parserOptions: {
         sourceType: "script",
       },
